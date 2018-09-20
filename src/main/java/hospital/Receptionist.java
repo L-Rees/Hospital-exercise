@@ -2,14 +2,14 @@ package hospital;
 
 public class Receptionist extends Employee{
 
-	private boolean phone;
+	private boolean onPhone;
 
 
 
-	public Receptionist(String empNumber, String empName, boolean phone) {
+	public Receptionist(String empNumber, String empName, boolean onPhone) {
 		this.empName = empName;
 		this.empNumber = empNumber;
-		this.phone = phone;
+		this.onPhone = onPhone;
 	}
 
 	
@@ -21,8 +21,8 @@ public class Receptionist extends Employee{
 
 
 
-	public boolean getPhone() {
-		return phone;
+	public boolean isOnPhone() {
+		return onPhone;
 	}
 
 }

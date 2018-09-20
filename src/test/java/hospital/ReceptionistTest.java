@@ -8,7 +8,9 @@ import org.junit.Test;
 public class ReceptionistTest  {
 
 	Receptionist underTest = new Receptionist("4", "name", true);
+	//Employee underTest = new Receptionist("4", "name", true);
 	
+	//don't have to actually test these Employee methods
 	@Test
 	public void shouldReturnEmpName() {
 		String check = underTest.getEmpName();
@@ -21,7 +23,7 @@ public class ReceptionistTest  {
 	}
 	@Test
 	public void shouldReturnTrueOnPhone() {
-		boolean check = underTest.getPhone();
+		boolean check = underTest.isOnPhone();
 		assertTrue(check);
 	}
 	@Test

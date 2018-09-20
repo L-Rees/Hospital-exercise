@@ -18,4 +18,11 @@ public abstract class Employee {
 
 	public abstract String paySalary();
 
+	@Override
+	public String toString() {
+		return "Employee [empName=" + empName + "]";
+	}
+
+	
+	
 }

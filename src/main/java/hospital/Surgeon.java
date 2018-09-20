@@ -1,33 +1,12 @@
 package hospital;
 
+public class Surgeon extends Doctor {
 
-public class Surgeon extends Employee implements MedicalDuties{
-
-	
-	private String specialty;
 	private boolean isOperating;
 
 	public Surgeon(String empNumber, String empName, String specialty, boolean isOperating) {
-		this.empNumber = empNumber;
-		this.empName = empName;
-		this.specialty = specialty;
+		super(empNumber, empName, specialty);
 		this.isOperating = isOperating;
-	
-	}
-
-	public void drawBlood(Patient patient) {
-		patient.removeBlood(5);	
-	}
-
-	@Override
-	public void careForPatient(Patient patient) {
-		patient.increaseHealth(5);
-		
-	}
-
-
-	public String getSpecialty() {
-		return specialty;
 	}
 
 	@Override
@@ -38,5 +17,5 @@ public class Surgeon extends Employee implements MedicalDuties{
 	public boolean getOperating() {
 		return isOperating;
 	}
-	
+
 }
